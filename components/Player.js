@@ -24,8 +24,8 @@ function Player() {
 
                 spotifyApi.getMyCurrentPlaybackState().then(data => {
                     setIsPlaying(data.body?.is_playing)
-                }).catch(err => console.log('HACK'))
-            }).catch(err => console.log('Parent HACK'))
+                }).catch(err => console.log(err))
+            }).catch(err => console.log(err))
         }
     }
 
